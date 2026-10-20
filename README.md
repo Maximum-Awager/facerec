@@ -11,7 +11,6 @@ FaceRec is a standalone, local face-recognition lab application for the confirme
 - Video: H.264, 1920×1080, 15 FPS
 - Web UI: port `3001`
 - API: port `8091`
-- IPAM/NetBox: completely separate application, data and Docker network
 
 ## Included Phase 1 capabilities
 
@@ -29,7 +28,7 @@ FaceRec is a standalone, local face-recognition lab application for the confirme
 - No unknown-event generation before the first employee is enrolled
 - Container and camera/model health status
 - Docker resource limits and restart policies
-- No audio processing, raw face-image storage, IPAM link, or door action
+- No audio processing, raw face-image storage, or door action
 
 ## Included Phase 2A capabilities
 
@@ -304,5 +303,4 @@ Recognition poor or always `Move closer`:
 - [ ] Re-enrollment replaces prior templates.
 - [ ] Disabled employees stop matching after the template refresh interval.
 - [ ] Known and unknown events appear without stored images.
-- [ ] FaceRec restart does not restart or modify IPAM/NetBox.
 - [ ] No door electronics are connected.
