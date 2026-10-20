@@ -77,7 +77,7 @@ The current audit actor is `local-dashboard`; strong user attribution requires t
 - The bundled Node-RED flow accepts only the FaceRec host or Pi-local tests, requires a secret token, rate-limits actions and maps event types to two fixed sound files.
 - This integration is a lab notification only. It does not use RGB anti-spoof results as authorization and cannot control a door, relay or GPIO.
 
-FaceRec v0.4.1 pins its Docker-only bridge to `198.18.254.0/28`. This reserved, non-routed range is intentionally outside the office LAN and known VPN networks. Do not remove the Compose `ipam` block or return the network to Docker automatic addressing.
+FaceRec v0.4.1 pins its Docker-only bridge to `198.18.254.0/28`. This reserved, non-routed range is intentionally outside the office LAN and known VPN networks. Do not remove the network's subnet-pinning config block or return the network to Docker automatic addressing.
 
 ## Architecture
 
